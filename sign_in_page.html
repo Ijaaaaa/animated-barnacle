@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign-in Tracker</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'https://www.googletagmanager.com/gtag/js?id=G-TLEFVS2RY9');
+      gtag('event', 'user_signed_in', {
+        'method': 'google'
+      });
+    </script>
+</head>
+<body>
+    <p>Signing in...</p>
+    <script>
+      // Optionally, you can navigate back or hide the web viewer after a short delay
+      setTimeout(function() {
+        // You might need to communicate back to Thunkable if needed
+        // For a simple tracker, you might just let it load and be replaced.
+      }, 1000); // Adjust the delay as needed
+    </script>
+</body>
+</html>
